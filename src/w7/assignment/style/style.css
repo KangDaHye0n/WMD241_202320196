@@ -36,6 +36,7 @@ body {
   width: 2rem;
   height: 2rem;
   background-color: #fff;
+  border-radius: 0.625rem;
 }
 
 .navigation__line {
@@ -52,6 +53,26 @@ body {
 .navigation__fontH {
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+.navigation__fontS {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  background-color: #000;
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+}
+
+.navigation__fontI {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  color: #fff;
+  background-color: #4c5fd5;
+  border-radius: 0.5rem;
 }
 
 .hero {
@@ -83,4 +104,18 @@ body {
   font-size: 1.25rem;
   font-weight: 400;
   color: #a4a4aa;
+}
+
+.main {
+  padding-inline: 8.75rem;
+  padding-block: 8rem 4rem;
+  display: flex;
+}
+
+.main__container {
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  justify-content: space-around;
+  align-items: center;
 }
