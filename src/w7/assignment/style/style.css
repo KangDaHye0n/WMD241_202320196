@@ -176,15 +176,6 @@ body {
   background-color: #000;
 }
 
-.footer__container__item {
-  list-style: none;
-}
-
-.footer__container__item__copyright {
-  list-style: none;
-  padding-bottom: 3.75rem;
-}
-
 .footer__font1 {
   font-size: 1.5rem;
   font-weight: 700;
@@ -202,14 +193,31 @@ body {
   font-weight: 400;
 }
 
-.footer__font4 {
-  font-size: 1.25rem;
-  font-weight: 400;
+.bottom {
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.footer__logo {
+.bottom__container__item {
+  list-style: none;
+}
+
+.bottom__container__item__copyright {
+  list-style: none;
+  padding-bottom: 3.75rem;
+  padding-right: 2.8125rem;
+}
+
+.bottom__logo {
   width: 2rem;
   height: 2rem;
   background-color: #fff;
   border-radius: 0.625rem;
+}
+
+.bottom__font4 {
+  font-size: 1.25rem;
+  font-weight: 400;
 }
