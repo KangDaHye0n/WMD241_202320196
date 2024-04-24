@@ -176,6 +176,10 @@ body {
   background-color: #000;
 }
 
+.footer__container__item {
+  list-style: none;
+}
+
 .footer__font1 {
   font-size: 1.5rem;
   font-weight: 700;
@@ -198,10 +202,6 @@ body {
   background-color: #000;
   display: flex;
   justify-content: flex-end;
-}
-
-.footer__container__item {
-  list-style: none;
 }
 
 .bottom__container__item__copyright {
