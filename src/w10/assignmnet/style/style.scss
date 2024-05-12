@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Schibsted Grotesk", sans-serif;
+  margin: 0;
+}
+
+.navigation {
+  padding: 1rem;
+  background-color: #f6f6eb;
+  color: #381fd1;
+  display: flex;
+  justify-content: space-between;
+  &__left {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+  }
+  &__right {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+  }
+  &__text {
+    font-size: 0.875rem;
+    font-weight: 900;
+    padding-inline: 0.5rem;
+    &--S {
+      font-size: 0.875rem;
+      font-weight: 900;
+      padding-inline: 0.625rem;
+      padding-block: 0.5rem;
+      color: #fff;
+      background-color: #381fd1;
+      border-radius: 0.375rem;
+    }
+  }
+}
