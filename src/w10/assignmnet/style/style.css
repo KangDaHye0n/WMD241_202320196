@@ -50,12 +50,10 @@ body {
 
 .main {
   display: grid;
-  -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
-  row-gap: 1.5rem;
-  grid-template-columns: 12.5rem repeat(auto-fit, minmax(15rem, 1fr));
-  max-width: 70.25rem;
-  margin-inline: auto;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+  grid-template-columns: 280px repeat(auto-fit, minmax(261px, 1fr));
+  padding-inline: 24px;
 }
 
 .side-bar {
@@ -129,12 +127,7 @@ body {
 
 .hero {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 261px);
-  -moz-column-gap: 32px;
-       column-gap: 32px;
-  row-gap: 32px;
-  margin-top: 64px;
-  margin-left: 64px;
+  margin-block: 64px;
 }
 .hero__title {
   grid-column: 1/-1;
@@ -158,6 +151,14 @@ body {
   font-family: "Roboto Mono", sans-serif;
   font-size: 16px;
   font-weight: 700;
+}
+.hero__card-collection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(261px, 1fr));
+  grid-auto-rows: 1fr;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  row-gap: 32px;
 }
 .hero__card {
   border: 1px solid rgb(229, 229, 230);
@@ -185,4 +186,12 @@ body {
   font-weight: 800;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.footer {
+  background-color: #11284b;
+}
+.footer__text {
+  color: #fff;
+  padding-inline: 24px;
 }
