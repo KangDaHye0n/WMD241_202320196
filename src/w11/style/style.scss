@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 150%;
+}
+
+.btn {
+  cursor: pointer;
+  max-width: fit-content;
+  padding-inline: 1rem;
+  padding-block: 8px;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  background-color: oklch(0.4 0.1 150);
+  color: oklch(0.9 0.1 150);
+  text-transform: capitalize;
+  border-radius: 64rem;
+  // 임시로
+  margin-top: 1.25rem;
+  transition: all 300ms ease-out;
+
+  &:hover {
+    background-color: oklch(0.4 0.1 240);
+    color: oklch(0.9 0.1 240);
+  }
+
+  &--type {
+    &-elevated {
+      background-color: oklch(0.95 0.0025 150);
+      color: oklch(0.45 0.1 150);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      &:hover {
+        background-color: oklch(0.95 0.0025 240);
+        color: oklch(0.45 0.1 240);
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+      }
+    }
+    &-tonal {
+      background-color: oklch(0.8 0.05 150);
+      color: oklch(0.3 0.1 150);
+    }
+    &-outline {
+      color: oklch(0.4 0.1 150);
+      background-color: unset;
+      border: 1px solid oklch(0.5 0 150);
+    }
+    &-text {
+      color: oklch(0.4 0.1 150);
+      padding-inline: 0.75rem;
+      background-color: unset;
+      &:hover {
+        background-color: unset;
+        color: oklch(1 0 150);
+        animation-name: rainbow;
+        animation-duration: 500ms;
+        animation-direction: alternate;
+        animation-iteration-count: 4;
+        animation-fill-mode: both;
+      }
+    }
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: oklch(0.5 0.2 0);
+    transform: translate(0rem, 0rem);
+  }
+  25% {
+    transform: translate(1rem, 0rem);
+  }
+  50% {
+    transform: translate(1rem, 1rem);
+  }
+  75% {
+    transform: translate(0rem, 1rem);
+  }
+  100% {
+    background-color: oklch(0.5 0.2 240);
+    transform: translate(0rem, 0rem);
+  }
+}
